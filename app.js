@@ -4,7 +4,7 @@ var path = require('path');
 var logger = require('morgan');
 var mongoose = require("mongoose");
 
-mongoose.connect('mongodb://localhost:27017/conapi', {useNewUrlParser: true, useUnifiedTopology: true},(err) =>{if(err){console.log("Error in DB: "+ err)}  else{console.log("DataBase Connected...")};});
+mongoose.connect('mongodb+srv://Wake_007:Wakefitt@007@cluster0-wpzxt.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true},(err) =>{if(err){console.log("Error in DB: "+ err)}  else{console.log("DataBase Connected...")};});
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
